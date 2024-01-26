@@ -1,4 +1,4 @@
-/* Menu Icon Navbar */
+ /* Menu Icon Navbar */
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -32,7 +32,7 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 
     /* Remove Menu Icon Navbar When Scrolled  */
-    menuIcon.classList.toggle('bx-x'); 
+    menuIcon.classList.remove('bx-x'); 
     navbar.classList.remove('active');
 };
 
@@ -119,5 +119,3 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { ori
 //       prevEl: ".swiper-button-prev",
 //     },
 //   });
-
-
